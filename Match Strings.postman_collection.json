@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "b8f857ea-dde8-4939-a4bb-2ba6d63c6110",
+		"name": "Match Strings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "match strings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"Dadad\",\r\n    \"subtext\":\"Dad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aemo/api/v1/match/strings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aemo",
+						"api",
+						"v1",
+						"match",
+						"strings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "match strings aws",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"texttexttexttext\",\r\n    \"subtext\":\"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "54.86.32.189:8080/aemo/api/v1/match/strings",
+					"host": [
+						"54",
+						"86",
+						"32",
+						"189"
+					],
+					"port": "8080",
+					"path": [
+						"aemo",
+						"api",
+						"v1",
+						"match",
+						"strings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
